@@ -45,7 +45,6 @@ public class Car
         this.przebieg = p;
         this.cena = c;
     }
-    public String getVIN() { return vin;}
     public void setVIN(String vin) throws IllegalArgumentException
     {
         if (vin == null || !vin.matches(VIN_PATTERN)) throw new IllegalArgumentException("Niepoprawny numer VIN!");
